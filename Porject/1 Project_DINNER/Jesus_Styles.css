@@ -1,0 +1,168 @@
+#container {
+    width: 1000px;
+    /* border: 1px solid grey; */
+   
+}
+
+#header {
+    height: 119px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1 a {
+    font-size: 50px;
+    font-weight: 100;
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+/* -------float LEFT ---- */
+#brand {
+    float: left;
+}
+
+/* -------float RIGHT---- */
+#logIn {
+    float: right;
+    background: dodgerblue;
+    width: 30%;
+    height: 119px;
+    /* padding: auto; */
+}
+
+#label-1 {
+    padding: 10px;
+    font-weight: bold;
+}
+
+#label-2 {
+    padding: 0px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.input-1 {
+    margin: 1%;
+    padding: 6px;
+    color: firebrick;
+}
+
+/* 
+Padding
+An element's padding is the space between its content and its border.
+The width property sets the width of an element.
+
+Width
+The width of an element does not include padding, borders, or margins!
+ */
+
+.buttom-box {
+    width: 297px;
+}
+
+.button {
+   width: 100px;
+   padding-left: 100px;
+   padding-right: 100px;
+   text-align: center;
+   font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+#menu {
+    height: 70px;
+    background: linear-gradient(rgb(111, 229, 233), dodgerblue); 
+    /* color hex #65DAEC */
+    padding: 7px 0;
+
+}
+
+ul {
+    list-style: none;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: blue;
+    font-weight: bold;
+    line-height: 35px;
+    transition: font-size .5s ease;
+}
+/* #menu ul li a.active */
+#menu ul li a:hover {
+    font-size: 25px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+#menu ul li:last-child {
+    border-right: none;
+}
+
+#menu ul li {
+    float: left;
+    padding: 0 20px;
+    height: 30px;
+    border-right: 1px solid blue;
+}
+
+#introduction {
+    background: linear-gradient(#89CFF0, #57A0D3);
+    padding: 40px;
+    margin: 18px 0px;
+}
+
+#introduction h2{
+    font-size: 50px;
+    color: #0F52BA;
+    /* font-weight: normal; */
+}
+
+#introduction p{
+    font-size: 25px;
+    color: #0F52BA;
+    text-align: justify;
+
+}
+
+.sidebar{
+    height: 500px;
+    width: 450px;
+    border: 1px solid;
+    padding: 10px 20px;
+}
+
+.sidebar h3 {
+    color: #0F52BA;
+    font-size: 30px;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: dodgerblue;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: none;
+    font-size: 25px;
+    color: #0F52BA;
+    font-weight: bold;
+}
+
+#left{
+    float: left;
+
+}
+#left ul li {
+    padding-bottom: 30px;
+}
+
+#right{
+    float: right;
+
+}

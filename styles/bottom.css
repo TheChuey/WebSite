@@ -1,0 +1,42 @@
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100px;
+    background-color:  #1D476F;
+    color: white;
+    align-items: center;
+}
+
+.bottom i {
+    /* color: #0077B5; */
+    color: #0C0B10;
+    font-size: 30px;
+}
+
+
+a {
+    color: whitesmoke;
+    
+}
+
+a:hover {
+   
+   text-decoration: underline;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo img {
+    height: 200px;
+   
+    /* margin: 55px; */
+    border-style: solid;
+    border-width: 15px;
+    border-color: #70869E;  
+    
+}

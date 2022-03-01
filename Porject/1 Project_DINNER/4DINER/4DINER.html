@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+   
+
+    <script src="https://kit.fontawesome.com/edf5c92e54.js" crossorigin="anonymous"></script>
+
+    <title>Resturant</title>
+
+</head>
+    <body>
+        <!-- ---------------- Head ---------------------- -->
+        <div class="One-box">
+            <div class="one-Item"> 
+                <div>Coding Project</div> 
+                <div> HTML CSS JavaScript </div>
+                <div>Dinner Project</div>
+            </div>
+            <div class="two-Item">
+                <div> Taco Factory</div>
+                    <img src="./pic/LoGo.png"  alt="Logo"> 
+                <div> I love good food. </div>
+            </div>
+            <div class="three-Item">
+                <div>
+                    <i class="fas fa-phone"> 
+                    <a>Phone</a>
+                    </i> 
+                </div>
+                <div>
+                    <i class="fas fa-map-marker-alt">
+                    <a>Location</a>
+                    </i>
+                </div>
+                <div>
+                    <i class="far fa-address-card">
+                    <a>Address</a>
+                    </i>
+                </div>            
+            </div>
+        </div>
+        <!-- ---------------- Combo Plates ---------------------- -->
+        <div class="Two-box" >
+            <div class="A-Item" >  
+                <img  class="pichw" src="./pic/Tacos1.jpg">
+                <div class="item-A"> 
+                    <h1 id="combo-a"> Combo A</h1>
+                    <div id="comboPlate"> 
+                        <div class="check"> 
+                            <input type = "checkbox"
+                                id = "3Tacos"
+                                value="Taco"
+                                class="check2"
+                                />   
+                            <span id="3_Tacos"> 3 Tacos</span> 
+                        </div>
+                        <div> 
+                            <input type = "checkbox"
+                                    id = "Rice"
+                                    value="Rice"
+                                    class="check2"
+                                    /> 
+                            <span> Rice </span>
+                        </div>
+                        <div> 
+                            <input type = "checkbox"
+                                id = "Beans"
+                                value="beans"
+                                class="check2"
+                                /> 
+                            <span> Beans </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="B-Item">
+                <img class="pichw" src="./pic/Fish Tacos.jpg">
+                <div class="item-B"> 
+                    <h1 id="combo-B"> Combo B </h1>
+                    <ul>
+                        <div>
+                            <input type = "checkbox"
+                                id = "fishTaco2"
+                                value="fishTacos"
+                                class="check2"
+                                /> 
+                            <span> 2 Fish Taco </span>
+                        </div>
+                        <div> 
+                            <input type = "checkbox"
+                            id = "whiteRise"
+                            value="Rice"
+                            class="check2"
+                            /> 
+                            <span> White Rice </span>
+                        </div>
+                        <div> 
+                            <input type = "checkbox"
+                                id = "Colsla"
+                                value="Colsla"
+                                class="check2"
+                                /> 
+                            <span>Colsla</span>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!------------------ Hiden Menu Box  ---------------------- -->
+            <div class="voice" id="invoice" style="visibility: hidden"> 
+                <div class="menu-box">  
+                    <div class="out">
+                        <p>  output box:</p>
+                        <div class="status" id="item-1"> </div>
+                        <div class="status" id="item-2"> </div> 
+                        <div class="status" id="item-3"> </div> 
+                        <div class="status" id="item-4"> </div>
+                        <div class="status" id="item-5"> </div> 
+                        <div class="status" id="item-6"> </div> 
+                    </div>
+                    <div class ="in">
+                        <input type = "button" 
+                            value ="Total"
+                            onClick="apper()"/>  
+
+                        <input type = "button" 
+                            value = "Clear Content"
+                            onClick="ativate()"/>     
+                    </div>
+                </div>     
+            </div>
+    
+        <!-- ---------------- QTY PRICE TOTAL  ---------------------- -->
+        <div class="Three-box">
+            <div class="I-Item"> 
+                <div class="order"> Price & Quantity</div>
+                <div id="item"  style="visibility: hidden"> 
+                    <div class="item-align"> 
+                        <div  id="taco-2"></div> 
+                        <div class="status" id="taco-item-qty" ></div> 
+                        <input class="qtyBut" type = "button" value=" QTY " onClick="tacos()">
+                        <span id="taco-qty" class="qty">QTY</span>           
+                    </div>
+                    <div class="item-align"> 
+                        <div id="rice-2"> </div>   
+                        <div class="status" id="whiteRice-item-qty"></div> 
+                        <input type = "button" value=" QTY " onClick="aros()"> </indput>
+                        <span id="rice-qty" class="qty">QTY</span>
+                    </div>
+                    <div class="item-align"> 
+                        <div id="rice-3"> </div>
+                        <div class="status" id="Rice-item-qty"></div>
+                        <input type = "button" value=" QTY " onClick="rice()"> </input>
+                        <span id="rice-3-qty" class="qty">QTY</span>
+                    </div>
+                    <div class="item-align"> 
+                        <div id="beans-4"></div>
+                        <div class="status" id="beans-item-qty"></div>
+                        <input type = "button" value=" QTY " onClick="bea()"> </input>
+                        <span id="beans-qty" class="qty">QTY</span>
+                    </div>
+                    <div class="item-align">     
+                        <div id="fish-4"></div>
+                        <div class="status" id="fish-item-qty"></div>
+                        <input type = "button" value=" QTY " onClick="fish()"> </input>
+                        <span id="fish-qty" class="qty">QTY</span>
+                    </div>
+                    <div class="item-align">     
+                        <div id="colsla-6"></div>
+                        <div class="status" id="colsla-item-qty"> </div>
+                        <input type = "button" value=" QTY " onClick="col()"> </input>
+                        <span id="colsla-qty" class="qty">QTY</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="I-Item"> 
+                <div class="total-order">  Total  Price </div>
+                    <div id="item1" style="visibility: hidden">
+                        <div class="col"> 
+                            <div class="status" id="taco-price"> </div> 
+                            <div> Total </div>
+                            <span id="taco-total"></span>
+                        </div>
+                        <div class="col"> 
+                            <div class="status" id="whiteRice-total-qty"></div> 
+                            <div> Total </div>
+                            <span id="white-total"></span>
+                        </div> 
+                        <div class="col"> 
+                            <div class="status" id="Rice-total-qty"></div> 
+                            <div> Total </div>
+                            <span id="rice-total"></span>
+                        </div>
+                        <div class="col"> 
+                            <div class="status" id="beans-total-qty"></div> 
+                            <div>Total</div>
+                            <span id="beans-total"></span>
+                        </div>
+                        <div class="col">
+                            <div class="status" id="fish-total-qty"></div>
+                            <div>Total</div>    
+                            <span id="fish-total"></span>
+                        </div>
+                        <div class="col"> 
+                            <div class="status" id="colsla-total-qty"></div> 
+                            <div> Total </div>
+                            <span id="colsla-total"> </span>
+                        </div>              
+                    </div>
+                </div> 
+            </div>
+<!------------------ Menu Items ---------------------- -->
+
+    </div>    
+    <div class="C-Item">
+        <h1> Side Items </h1>
+        <div class="Two-box">
+            <div class="sideItems">
+                <div> Coleslaw</div>  
+                <img class="picture" src="./pic/Coleslaw.jpg"/>
+            </div>
+            <div class="sideItems"> 
+                <div> Rice  </div>
+                <img class="picture" src="./pic/Rice.jpg" />
+            </div>
+            <div class="sideItems">
+                <div> Beans </div>
+                <img class="picture" src="./pic/Beans.jpg"/>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./JavaScript/Diner.js"> </script>
+    
+
+    </body>
+</html>
